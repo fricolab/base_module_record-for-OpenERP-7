@@ -23,9 +23,9 @@ import zipfile
 import StringIO
 import base64
 
-import tools
-from tools.translate import _
-from osv import osv, fields
+import openerp.tools
+from openerp.tools.translate import _
+from openerp.osv import osv, fields
 
 
 def _create_yaml(self, cr, uid, data, context=None):

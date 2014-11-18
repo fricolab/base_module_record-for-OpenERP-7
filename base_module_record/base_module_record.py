@@ -20,10 +20,10 @@
 ##############################################################################
 
 from xml.dom import minidom
-from osv import fields,osv
-import pooler
+from openerp.osv import fields,osv
+import openerp.pooler
 import string
-import tools
+import openerp.tools
 
 
 class xElement(minidom.Element):
@@ -44,7 +44,7 @@ def doc_createXElement(xdoc, tagName):
         return e
 
 import yaml
-from tools import yaml_tag # This import is not unused! Do not remove!
+from openerp.tools import yaml_tag # This import is not unused! Do not remove!
 # Please do not override yaml_tag here: modify it in server bin/tools/yaml_tag.py
 
 class base_module_record(osv.osv):
